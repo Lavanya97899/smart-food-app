@@ -25,6 +25,7 @@ Admin Dashboard :
  The admin dashboard allows administrators to manage user profiles, food entries, and system settings. Admins can also perform user deletion and food entry additions.
 
 Technologies Used :
+
  Django Framework: Backend framework for handling user authentication, session management, and meal logging functionalities.
 Hugging Face Transformers: Used to integrate the dima806/indian_food_image_detection model for image-based food classification.
 Pandas: A library for processing and normalizing nutritional data, enabling accurate comparisons and analysis.
@@ -35,5 +36,7 @@ User Uploads Meal Image: The user uploads an image of their meal. The app uses t
 Nutritional Information: After detecting the food, the app retrieves nutritional data (calories, protein, carbs, fats) and displays it in the user’s food diary.
 Personalized Recommendations: The app analyzes the user’s dietary habits and provides meal recommendations using KNN based on the user’s preferences and goals.
 Tracking & Analysis: Nutritional data is tracked and visualized in real-time, helping users monitor their intake and adjust their diet.
+
+
 Conclusion :
  The Smart Food Diary application is an innovative tool that combines machine learning, real-time data visualization, and personalized dietary recommendations to help users manage their health effectively. It allows users to make informed decisions about their diet, track their progress, and stay motivated to achieve their nutrition goals.
