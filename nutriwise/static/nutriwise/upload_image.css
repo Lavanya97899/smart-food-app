@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('ps.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #222;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Button Hover Animation */
+.nutriwise-button {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nutriwise-button:hover {
+    background-color: #e40707;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+h1 {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1s ease-out;
+}
+/* Form Styling */
+.form-container {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 500px;
+    animation: zoomIn 0.8s ease-out;
+    transform-origin: center;
+}
+
+/* Add hover effect to form container */
+.form-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Input File Styling */
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    animation: fadeIn 1s ease;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #388E3C;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Analysis Result Styling */
+.analysis-result {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    animation: slideIn 0.8s ease-out;
+}
+
+.analysis-result:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Add fade-in animation to analysis-result list */
+.analysis-result ul {
+    list-style-type: none;
+    padding-left: 0;
+    animation: fadeIn 1s ease-out;
+}
+
+.analysis-result li {
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-out;
+}
+/* Loading Animation */
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 9999;
+}
+
+.loading img {
+  width: 40px;
+  animation: pulse 1s infinite;
+}
+
+.loading p {
+  font-size: 1rem;
+  color: #4CAF50;
+  margin-top: 10px;
+}

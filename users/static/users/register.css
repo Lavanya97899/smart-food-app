@@ -1,0 +1,97 @@
+/* Global Box Sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: url('back.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: 'Optima','Monaco','Candara','Perpetua', Arial, sans-serif;
+    color: #0f0101;
+}
+
+/* Center the registration box with a light white background */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(246, 245, 245, 0.4);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+}
+
+/* Title for the form */
+.title {
+    font-size: 32px;
+    font-weight: normal;
+    color: #0c0000;
+    margin-bottom: 20px;
+}
+
+/* Style for input fields */
+.input-box {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fdec69;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #fbf866;
+}
+
+input:focus + label {
+    transform: translateY(-25px);
+    color: #000206;
+}
+
+/* Styling for the register button */
+.button input {
+    width: 100%;
+    padding: 16px;
+    background-color: #FFEB3B;
+    border: none;
+    border-radius: 8px;
+    color: #100101;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s ease-in-out;
+}
+
+.button input:hover {
+    background-color: #FDD835;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .button input {
+        width: 100%;
+    }
+}
+
